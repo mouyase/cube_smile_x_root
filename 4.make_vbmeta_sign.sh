@@ -9,7 +9,7 @@ python3 avbtool.py make_vbmeta_image --key rsa4096_vbmeta.pem --algorithm SHA256
     --chain_partition l_modem:7:keys/l_modem.bin \
     --chain_partition l_ldsp:8:keys/l_ldsp.bin \
     --chain_partition l_gdsp:9:keys/l_gdsp.bin \
-    --chain_partition pm_sys:20:keys/pm_sys.bin \
+    --chain_partition pm_sys:10:keys/pm_sys.bin \
     --chain_partition l_agdsp:11:keys/l_agdsp.bin \
     --chain_partition l_cdsp:12:keys/l_cdsp.bin \
     --chain_partition socko:13:keys/socko.bin \
