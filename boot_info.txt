@@ -1,0 +1,26 @@
+Footer version:           1.0
+Image size:               67108864 bytes
+Original image size:      28567552 bytes
+VBMeta offset:            28569600
+VBMeta size:              2304 bytes
+--
+Minimum libavb version:   1.0
+Header Block:             256 bytes
+Authentication Block:     576 bytes
+Auxiliary Block:          1472 bytes
+Public key (sha1):        ea410c1b46cdb2e40e526880ff383f083bd615d5
+Algorithm:                SHA256_RSA4096
+Rollback Index:           0
+Flags:                    0
+Rollback Index Location:  0
+Release String:           'avbtool 1.1.0'
+Descriptors:
+    Hash descriptor:
+      Image Size:            28567552 bytes
+      Hash Algorithm:        sha256
+      Partition Name:        boot
+      Salt:                  a71a9a46f1e7318edbf92ab939ab11a8f972553759ade36b07786fd1188b7d53
+      Digest:                e017ac945a7dc9c54bbaeee0424221e8029977e60c4e389be4933e338d908c4c
+      Flags:                 0
+    Prop: com.android.build.boot.fingerprint -> 'UNISOC/ums512_lwfq_1h10_Natv/ums512_1h10:11/RP1A.201005.001/10338:user/release-keys'
+    Prop: com.android.build.boot.os_version -> '11'

@@ -1,0 +1,67 @@
+Minimum libavb version:   1.0
+Header Block:             256 bytes
+Authentication Block:     576 bytes
+Auxiliary Block:          16960 bytes
+Public key (sha1):        2597c218aae470a130f61162feaae70afd97f011
+Algorithm:                SHA256_RSA4096
+Rollback Index:           0
+Flags:                    0
+Rollback Index Location:  0
+Release String:           'avbtool 1.1.0'
+Descriptors:
+    Chain Partition descriptor:
+      Partition Name:          boot
+      Rollback Index Location: 1
+      Public key (sha1):       ea410c1b46cdb2e40e526880ff383f083bd615d5
+    Chain Partition descriptor:
+      Partition Name:          vbmeta_system
+      Rollback Index Location: 2
+      Public key (sha1):       e2c66ff8a1d787d7bf898711187bff150f691d27
+    Chain Partition descriptor:
+      Partition Name:          vbmeta_system_ext
+      Rollback Index Location: 3
+      Public key (sha1):       f204332ee2d0bec13ea120b73c5adcf7866bf889
+    Chain Partition descriptor:
+      Partition Name:          vbmeta_vendor
+      Rollback Index Location: 4
+      Public key (sha1):       9885bf5bf909e5208dfd42abaf51ad9b104ee117
+    Chain Partition descriptor:
+      Partition Name:          vbmeta_product
+      Rollback Index Location: 5
+      Public key (sha1):       766a95798206f6e980e42414e3cb658617c27daf
+    Chain Partition descriptor:
+      Partition Name:          dtbo
+      Rollback Index Location: 6
+      Public key (sha1):       ea410c1b46cdb2e40e526880ff383f083bd615d5
+    Chain Partition descriptor:
+      Partition Name:          l_modem
+      Rollback Index Location: 7
+      Public key (sha1):       e93e7d91ba1a46b81a5f15129b4dc5769bf41f26
+    Chain Partition descriptor:
+      Partition Name:          l_ldsp
+      Rollback Index Location: 8
+      Public key (sha1):       e93e7d91ba1a46b81a5f15129b4dc5769bf41f26
+    Chain Partition descriptor:
+      Partition Name:          l_gdsp
+      Rollback Index Location: 9
+      Public key (sha1):       e93e7d91ba1a46b81a5f15129b4dc5769bf41f26
+    Chain Partition descriptor:
+      Partition Name:          pm_sys
+      Rollback Index Location: 10
+      Public key (sha1):       e93e7d91ba1a46b81a5f15129b4dc5769bf41f26
+    Chain Partition descriptor:
+      Partition Name:          l_agdsp
+      Rollback Index Location: 11
+      Public key (sha1):       e93e7d91ba1a46b81a5f15129b4dc5769bf41f26
+    Chain Partition descriptor:
+      Partition Name:          l_cdsp
+      Rollback Index Location: 12
+      Public key (sha1):       e93e7d91ba1a46b81a5f15129b4dc5769bf41f26
+    Chain Partition descriptor:
+      Partition Name:          socko
+      Rollback Index Location: 13
+      Public key (sha1):       bc688cacacd959cfaafbf0549d080d6fc2d50a08
+    Chain Partition descriptor:
+      Partition Name:          odmko
+      Rollback Index Location: 14
+      Public key (sha1):       425215859f49f31809f16491c2a67e04df79baaf
