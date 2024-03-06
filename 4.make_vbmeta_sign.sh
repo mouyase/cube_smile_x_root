@@ -15,5 +15,5 @@ python3 avbtool.py make_vbmeta_image --key rsa4096_vbmeta.pem --algorithm SHA256
     --chain_partition socko:13:keys/socko.bin \
     --chain_partition odmko:14:keys/odmko.bin \
     --padding_size 20480 --output vbmeta-sign-custom.img
-
+    
 python3 vbmeta_pad.py
