@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
-python3 avbtool.py make_vbmeta_image --key rsa4096.pem --algorithm SHA256_RSA4096 --flag 2 \
+rm -rf patched-vbmeta-sign.img
+
+python libs/avbtool make_vbmeta_image --key rsa4096.pem --algorithm SHA256_RSA4096 --flag 0 \
     --chain_partition boot:1:keys/boot.bin \
     --chain_partition dtbo:6:keys/dtbo.bin \
     --chain_partition socko:13:keys/socko.bin \
@@ -14,6 +16,8 @@ python3 avbtool.py make_vbmeta_image --key rsa4096.pem --algorithm SHA256_RSA409
     --chain_partition pm_sys:10:keys/pm_sys.bin \
     --chain_partition l_agdsp:11:keys/l_agdsp.bin \
     --chain_partition l_cdsp:12:keys/l_cdsp.bin \
-    --padding_size 20480 --output vbmeta-sign-custom.img
+    --padding_size 20480 --output vbmeta-sign-temp.img
     
-python3 vbmeta_pad.py
+python libs/pad
+
+rm -rf vbmeta-sign-temp.img

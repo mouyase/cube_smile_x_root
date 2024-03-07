@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
-python3 avbtool.py add_hash_footer \
-    --image apatch_boot.img \
+python libs/avbtool add_hash_footer \
+    --image patched-boot.img \
     --partition_name boot \
     --key rsa4096.pem \
     --algorithm SHA256_RSA4096 \

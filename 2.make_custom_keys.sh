@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-python3 avbtool.py extract_public_key --key rsa4096.pem --output keys/boot.bin
+python libs/avbtool extract_public_key --key rsa4096.pem --output keys/boot.bin

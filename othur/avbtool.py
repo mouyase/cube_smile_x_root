@@ -1292,9 +1292,9 @@ class AvbPropertyDescriptor(AvbDescriptor):
     Arguments:
       o: The object to write the output to.
     """
-    # Go forward with python 3, bytes are represented with the 'b' prefix,
+    # Go forward with python libs/3, bytes are represented with the 'b' prefix,
     # e.g. b'foobar'. Thus, we trim off the 'b' to keep the print output
-    # the same between python 2 and python 3.
+    # the same between python libs/2 and python libs/3.
     printable_value = repr(self.value)
     if printable_value.startswith('b\''):
       printable_value = printable_value[1:]
@@ -4739,7 +4739,7 @@ class AvbTool(object):
       args.func(args)
     except AttributeError:
       # This error gets raised when the command line tool is called without any
-      # arguments. It mimics the original Python 2 behavior.
+      # arguments. It mimics the original python libs/2 behavior.
       parser.print_usage()
       print('avbtool: error: too few arguments')
       sys.exit(2)

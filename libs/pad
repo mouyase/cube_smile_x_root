@@ -1,14 +1,14 @@
 import hashlib
 import sys
 
-f = open("vbmeta-sign-custom.img", "rb")
+f = open("vbmeta-sign-temp.img", "rb")
 
 b = f.read()
 
 sha = hashlib.sha256(b).digest()
 
 f.close()
-f = open("vbmeta-sign-custom.img", "wb")
+f = open("patched-vbmeta-sign.img", "wb")
 f.write(b) 
 f.seek(1048576 - 512)
 
